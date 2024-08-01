@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="_488bf90c-b1a3-46a8-9da7-cfbd6e91c783.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lirik & Playlist</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Lyrics & Playlist</h1>
+
+    <!-- Lyrics Section -->
+    <div class="container">
+        <div class="lyrics">
+            <h2>Lagu Cover Shani-Yan: Rewrite The Stars - The Greatest Showman</h2>
+            <hr>
+            <pre style="white-space: pre-wrap; word-wrap: break-word;">
+you know I want you it's not a secret I try to hide you 
+know you want me so don't keep saying a hand are tight
+your Clarance not in the Cs and fate is pulling your miles away and outter reach
+from me but you're here in my heart so who can stop me a fight aside that you're my
+                
+destiny what if we reite the Stars say you were made to be
+mine nothing can keep us aart you be the one I was meant to fight it's it's up to
+you and it's up to me no one can say what we get to be why don't we
+reite the Stars maybe the world could be ours tonight
+<span id="dots">...</span><span id="more" class="more-content">
+you think it's easy you think I don't want to run to
+you but there are mountains and there are doors that we
+can't walk through I know you're wondering why because we're able to be
+just you and me Within These Walls but when we go inside you're going to wake
+up and see that it was hopeless after all no no one can reite the Stars how
+can you say you'll be mine everything keeps us aart and I'm not the one you
+were meant to fight it's not up to you it's not up to me when everyone tells us
+what we can be how can we reite the Stars say that the world can be
+yours tonight all I want is to fly with you all I want is to
+fall with you so just give me all of you it feels
+impossible impossible say that is possible no one can reite the Stars how
+can you say you will be mine everything keeps us apart and I'm not the one you
+were meant to fight it's not up to you it's not up to me when everyone tells us
+what we can be how can we reite the Stars say that the world can be
+ours tonight
+</span>
+            </pre>
+            <button onclick="readMore()">Read More</button>
+        </div>
+        <img src="download.jpg" alt="Cover Image" class="cover">
+    </div>
+
+    <!-- Playlist Section -->
+    <div class="table-container">
+        <h1>Playlist By Shani-Yan</h1>
+        <table> 
+            <tr>
+                <th colspan="2">Song Cover by Shani-Yan</th>
+            </tr>
+            <tr>
+                <th>Judul Song</th>
+                <th>Tanggal Rilis</th>
+            </tr>
+            <tr>
+                <td><a href="lyrick4.html">Taylor Swift</a></td>
+                <td>17 Jun 2023</td>
+            </tr>
+            <tr>
+                <td><a href="lyrics2.html">Somewhere Only We Know - Keane</a></td>
+                <td>2 Des 2023</td>
+            </tr>
+            <tr>
+                <td><a href="lyrics3.html">A Thousand Years</a></td>
+                <td>16 Sep 2023</td>
+            </tr>
+            <tr>
+                <td><a href="lyrics.html">Justin Bieber - Eenie Meenie</a></td>
+                <td>29 Jun 2024</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="kontak.html">Tentang Musisi</a></td>
+                
+            </tr>
+        </table>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; Shani-Yan. <a href="portofolio.html">By Rizkyan Dwi Fahrizah</a> <br>
+        <a href=""></a> XI Rpl | <a href=""></a>SMKN 2 Buduran
+    </footer>
+
+    <script>
+        function readMore() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.querySelector("button");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.textContent = "Read More"; 
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.textContent = "Read Less"; 
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</body>
+</html>

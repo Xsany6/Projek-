@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="_488bf90c-b1a3-46a8-9da7-cfbd6e91c783.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lirik & Playlist</title>
+    </head>
+    <link rel="stylesheet" href="./css/styele3.css">
+<body>
+    <h1>Lyrics & Playlist</h1>
+
+    <!-- Lyrics Section -->
+    <div class="container">
+        <div class="lyrics">
+            <h2>Lagu Cover Shani-Yan: A Thousand Years</h2>
+            <hr>
+            <pre style="white-space: pre-wrap; word-wrap: break-word;">
+Heart beats fast
+Colors and promises
+How to be brave?
+How can I love when I'm afraid to fall?
+But watching you stand alone
+All of my doubt suddenly goes away somehow
+One step closer
+I have died every day waiting for you
+
+Darling, don't be afraid
+I have loved you for a thousand years
+I'll love you for a thousand more
+Time stands still
+Beauty in all she is
+I will be brave
+<span id="dots">...</span><span id="more" class="more-content">
+I will not let anything take away
+What's standing in front of me
+Every breath, every hour has come to this
+One step closer
+I have died every day waiting for you
+Darling, don't be afraid
+I have loved you for a thousand years
+I'll love you for a thousand more
+And all along I believed I would find you
+Time has brought your heart to me
+I have loved you for a thousand years
+I'll love you for a thousand more
+One step closer
+One step closer
+I have died every day waiting for you
+Darling, don't be afraid
+I have loved you for a thousand years
+I'll love you for a thousand more
+And all along I believed I would find you
+Time has brought your heart to me
+I have loved you for a thousand years
+I'll love you for a thousand more
+</span>
+            </pre>
+            <button id="readMoreBtn" onclick="readMore()">Read More</button>
+            <a href="https://www.youtube.com/watch?v=M2bK9kwbR_w" target="_blank"><button>Watch on YouTube</button></a>
+            <a href="index.html"><button>HOME</button></a>
+        </div>
+        <img src="download.jpg" alt="Cover Image" class="cover" style="width:200px;height:auto;">
+    </div>
+
+    <footer>
+        &copy; Shani-Yan. <a href="portofolio.html">By Rizkyan Dwi Fahrizah</a> <br>
+        <a href=""></a> XI Rpl | <a href=""></a>SMKN 2 Buduran
+    </footer>
+    
+    <script>
+        function readMore() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("readMoreBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.textContent = "Read More"; 
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.textContent = "Read Less"; 
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</body>
+</html>

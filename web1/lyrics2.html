@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="_488bf90c-b1a3-46a8-9da7-cfbd6e91c783.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lirik & Playlist</title>
+    <link rel="stylesheet" href="./css/styele3.css">
+</head>
+<body>
+    <h1>Lyrics & Playlist</h1>
+
+    <!-- Lyrics Section -->
+    <div class="container">
+        <div class="lyrics">
+            <h2>Lagu Cover Shani-Yan: Somewhere Only We Know - Keane</h2>
+            <hr>
+            <pre style="white-space: pre-wrap; word-wrap: break-word;">
+I walked across an empty land
+I knew the pathway like the back of my hand
+I felt the earth beneath my feet
+Sat by the river and it made me complete
+Oh, simple thing, where have you gone?
+I'm getting old, and I need something to rely on
+So, tell me when you're gonna let me in
+I'm getting tired, and I need somewhere to begin
+I came across a fallen tree
+
+I felt the branches of it looking at me
+Is this the place we used to love?
+Is this the place that I've been dreaming of?
+Oh, simple thing, where have you gone?
+<span id="dots">...</span><span id="more" class="more-content">
+I'm getting old, and I need something to rely on
+So, tell me when you're gonna let me in
+I'm getting tired, and I need somewhere to begin
+And if you have a minute, why don't we go
+Talk about it somewhere only we know?
+This could be the end of everything
+So, why don't we go somewhere only we know?
+Somewhere only we know
+
+Oh, simple thing, where have you gone?
+I'm getting old, and I need something to rely on
+So, tell me when you're gonna let me in
+I'm getting tired, and I need somewhere to begin
+And if you have a minute, why don't we go
+Talk about it somewhere only we know?
+This could be the end of everything
+So, why don't we go?
+So, why don't we go?
+Ooh, oh-oh
+Ah, oh
+This could be the end of everything
+So, why don't we go somewhere only we know?
+Somewhere only we know
+Somewhere only we know
+</span>
+            </pre>
+            <button id="readMoreBtn" onclick="readMore()">Read More</button>
+            <a href="https://www.youtube.com/watch?v=kLKqeyx_HjY" target="_blank"><button>Watch on YouTube</button></a>
+            <a href="index.html"><button>HOME</button></a>
+        </div>
+        <img src="download.jpg" alt="Cover Image" class="cover" style="width:200px;height:auto;">
+    </div>
+    <footer>
+        &copy; Shani-Yan. <a href="portofolio.html">By Rizkyan Dwi Fahrizah</a> <br>
+        <a href=""></a> XI Rpl | <a href=""></a>SMKN 2 Buduran
+    </footer>
+    <script>
+        function readMore() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("readMoreBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.textContent = "Read More"; 
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.textContent = "Read Less"; 
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</body>
+</html>

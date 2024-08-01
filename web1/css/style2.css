@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  h1, h2, legend {
+    animation: fadeInDown 2s ease-in-out;
+  }
+
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 2s ease-in-out;
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+  }
+
+  .container img {
+    width: 200px;
+    height: auto;
+    animation: zoomIn 2s ease-in-out;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+
+  .container pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 1.5;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  a {
+    color: #007BFF;
+    text-decoration: none;
+    animation: fadeInUp 2s ease-in-out;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 2s ease-in-out;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+  }
+
+  input, textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+
+  input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: auto;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+footer {
+margin-top: 20px;
+background-color: #007BFF;
+color: white;
+padding: 10px;
+border-radius: 5px;
+text-align: center;
+width: 100%;
+max-width: 900px;
+box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+}
+
+footer a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+footer a:hover {
+text-decoration: underline;
+}

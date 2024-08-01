@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="_488bf90c-b1a3-46a8-9da7-cfbd6e91c783.ico" type="image/x-icon">s
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lirik & Playlist</title>
+    <link rel="stylesheet" href="./css/styele3.css">
+</head>
+<body>
+    <h1>Lyrics & Playlist</h1>
+
+    <!-- Lyrics Section -->
+    <div class="container">
+        <div class="lyrics">
+            <h2>Lagu Cover Shani-Yan: Justin Bieber - Eenie Meenie</h2>
+            <hr>
+            <pre style="white-space: pre-wrap; word-wrap: break-word;">
+Eenie meenie miney mo
+Catch a bad chick by her toe
+If she holla
+If-if, if she holla, let her go
+She's indecisive, she can't decide
+She keeps on lookin' from left to right
+Girl, come a bit closer, look in my eyes
+Searching is so wrong, I'm Mr. Right
+
+You seem like the type to love 'em and leave 'em
+And disappear right after this song
+So give me the night to show you, hold you
+Don't leave me out here dancing alone
+You can't make up your mind, mind, mind, mind, mind
+Please don't waste my time, time, time, time, time
+I'm not tryna rewind, -wind, -wind, -wind, -wind
+I wish our hearts could come together as one
+<span id="dots">...</span><span id="more" class="more-content">
+'Cause shorty is a eenie meenie miney mo lover
+Shorty is a eenie meenie miney mo lover
+Shorty is a eenie meenie miney mo lover
+Shorty is a eenie meenie miney mo lover, oh-oh-oh-oh
+Let me show you what you're missin', paradise
+With me you're winning, girl, you don't have to roll the dice
+Tell me what you're really here for (here for)
+Them other guys? I can see right through ya
+You seem like the type to love 'em and leave 'em
+
+And disappear right after the song
+So give me the night to show you and hold you
+Don't leave me out here dancin' alone
+Can't make up your mind, mind, mind, mind, mind
+Please don't waste my time, time, time, time, time
+Not trying rewind, -wind, -wind, -wind, -wind
+I wish our hearts could come together as one
+
+Shorty is a eenie meenie miney mo lover
+Shorty is a eenie meenie miney mo lover
+Shorty is a eenie meenie miney mo lover
+Shorty is a eenie meenie miney mo lover, oh-oh-oh-oh
+Eenie meenie miney moe, catch a bad chick by her toe
+If she holla, if-if, if she holla let her go
+Eenie meenie miney moe, catch a bad chick by her toe
+If she holla, la, la, la she holla let her go
+
+Shorty is a eenie meenie miney mo lover
+Shorty is a eenie meenie miney mo lover
+Shorty is a eenie meenie miney mo lover
+Shorty is a eenie meenie miney mo lover
+You can't make up your mind, mind, mind, mind, mind
+Please don't waste my time, time, time, time, time
+I'm not tryna rewind, -wind, -wind, -wind, -wind (ooh, yeah)
+
+I wish our hearts could come together as one
+Shorty is a eenie meenie miney mo lover
+Shorty is a eenie meenie miney mo lover
+Shorty is a eenie meenie miney mo lover
+Shorty is a eenie meenie miney mo lover, oh-oh-oh-oh
+</span>
+            </pre>
+            <button id="readMoreBtn" onclick="readMore()">Read More</button>
+            <a href="https://www.youtube.com/watch?v=cLCxcR2Ie7k" target="_blank"><button>Watch on YouTube</button></a>
+            <a href="index.html"><button>HOME</button></a>
+        </div>
+        <img src="download.jpg" alt="Cover Image" class="cover" style="width:200px;height:auto;">
+    </div>
+
+    <footer>
+        &copy; Shani-Yan. <a href="portofolio.html">By Rizkyan Dwi Fahrizah</a> <br>
+        <a href=""></a> XI Rpl | <a href=""></a>SMKN 2 Buduran
+    </footer>
+
+    <script>
+        function readMore() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("readMoreBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.textContent = "Read More"; 
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.textContent = "Read Less"; 
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</body>
+</html>

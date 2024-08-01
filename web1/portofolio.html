@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="_488bf90c-b1a3-46a8-9da7-cfbd6e91c783.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/style4.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="./resource/15094714-7044-4397-8dd5-b16321b93d6a.jpg" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="./resource/2b0fe3ee-59cd-405b-aa55-266c4ed400df.jpg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="./resource/2d6271c9-eeda-4913-9c9e-256c57171f13.jpg" alt="Slide 3">
+            </div>
+        </div>
+        <div class="navigation">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate web developer with a love for creating beautiful and functional websites. I enjoy experimenting with new technologies and pushing the boundaries of what can be achieved with code. Welcome to my portfolio!</p>
+        </div>
+        <div class="section">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <img src="https://via.placeholder.com/300" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Project One</h3>
+                        <p>Brief description of the project. This project involves...</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="https://via.placeholder.com/300" alt="Project 2">
+                    <div class="project-info">
+                        <h3>Project Two</h3>
+                        <p>Brief description of the project. This project involves...</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="https://via.placeholder.com/300" alt="Project 3">
+                    <div class="project-info">
+                        <h3>Project Three</h3>
+                        <p>Brief description of the project. This project involves...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <a href="https://x.com/Xsany434182" target="_blank" rel="noopener noreferrer">X</a>
+            <a href="https://www.tiktok.com/@xsany6" target="_blank" rel="noopener noreferrer">TikTok</a>
+            
+            <a href="https://www.github.com/Xsany6" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const slider = document.querySelector('.slider');
+        const slides = document.querySelectorAll('.slide');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            if (index >= slides.length) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = slides.length - 1;
+            } else {
+                currentIndex = index;
+            }
+            const offset = -currentIndex * 100;
+            slider.style.transform = `translateX(${offset}%)`;
+        }
+
+        nextButton.addEventListener('click', () => {
+            showSlide(currentIndex + 1);
+        });
+
+        prevButton.addEventListener('click', () => {
+            showSlide(currentIndex - 1);
+        });
+
+        setInterval(() => {
+            showSlide(currentIndex + 1);
+        }, 5000); // Change slide every 5 seconds
+    </script>
+</body>
+</html>

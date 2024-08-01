@@ -1,0 +1,156 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background: #6a1b9a;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.slider-container {
+    max-width: 900px;
+    margin: 2em auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.navigation button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.navigation button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.container {
+    max-width: 900px;
+    margin: 2em auto;
+    text-align: center;
+}
+
+.section {
+    margin-bottom: 2em;
+}
+
+.section h2 {
+    color: #6a1b9a;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.project {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-info h3 {
+    margin: 0;
+    color: #6a1b9a;
+}
+
+.project-info p {
+    margin-top: 0.5em;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.social-media a {
+    color: #6a1b9a;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.social-media a:hover {
+    color: #4a0072;
+}
+
+footer {
+    background: #6a1b9a;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}

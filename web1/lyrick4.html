@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="_488bf90c-b1a3-46a8-9da7-cfbd6e91c783.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lirik & Playlist</title>
+    <link rel="stylesheet" href="./css/styele3.css">
+</head>
+<body>
+    <h1>Lyrics & Playlist</h1>
+
+    <!-- Lyrics Section -->
+    <div class="container">
+        <div class="lyrics">
+            <h2>Lagu Cover Shani-Yan: Enchanted - Taylor Swift</h2>
+            <hr>
+            <pre style="white-space: pre-wrap; word-wrap: break-word;">
+I walked through the door with you
+The air was cold, but something 'bout it felt like home somehow
+Left my scarf there at your sister's house
+And you still got it in your drawer, even now
+Oh, your sweet disposition, and my wide eyed gaze
+We're singing in a car getting lost upstate
+
+Autumn leaves falling down like pieces into place
+And I can picture it after all these days
+And I know it's long gone and that magic's not here no more
+And I might be okay, but I'm not, fine at all
+Cause here we are again on that little town street
+You almost ran the red cause you were looking over to me
+Wind in my hair, I was there,
+<span id="dots">...</span><span id="more" class="more-content">
+I remember it all too well
+Photo album on my counter, your cheeks were turning red
+You used to be a little kid with glasses in a twin size bed
+And your mother's telling stories 'bout you on a tee-ball team
+You tell me 'bout your past thinking your future was me
+Cause here we are again in the middle of the night
+We're dancing round the kitchen in the refrigerator light
+Down the stairs, I was there, I remember it all too well
+
+And maybe we got lost in translation
+Maybe I asked for too much
+But maybe this thing was a masterpiece
+Till you tore it all up
+Running scared, I was there, I remember it all too well
+And you call me up again just to break me like a promise
+So casually cruel in the name of being honest
+
+I'm a crumpled up piece of paper lying here
+Cause I remember it all, all, all too well
+
+Time won't fly, it's like I'm paralyzed by it
+I'd like to be my old self again
+But I'm still trying to find it
+After plaid shirt days and nights when you made me your own
+Now you mail back my things and I walk home alone
+But you keep my old scarf from that very first week
+Cause it reminds you of innocence and it smells like me
+You can't get rid of it, cause you remember it all too well, yeah
+Cause there we are again when I loved you so
+
+Back before you lost the one real thing you've ever known
+It was rare, I was there, I remember it all too well
+Wind in my hair, you were there, you remember it all
+Down the stairs, you were there, you remember it all
+It was rare, I was there, I remember it all too well
+</span>
+            </pre>
+            <button id="readMoreBtn" onclick="readMore()">Read More</button>
+            <a href="https://www.youtube.com/watch?v=jF1iIHxH4vk" target="_blank"><button>Watch on YouTube</button></a>
+            <a href="index.html"><button>HOME</button></a>
+        </div>
+        <img src="download.jpg" alt="Cover Image" class="cover" style="width:200px;height:auto;">
+    </div>
+
+    <footer>
+        &copy; Shani-Yan. <a href="portofolio.html">By Rizkyan Dwi Fahrizah</a> <br>
+        <a href=""></a> XI Rpl | <a href=""></a>SMKN 2 Buduran
+    </footer>
+
+    <script>
+        function readMore() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("readMoreBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.textContent = "Read More"; 
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.textContent = "Read Less"; 
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</body>
+</html>
